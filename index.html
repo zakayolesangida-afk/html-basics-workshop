@@ -4,11 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My First HTML Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: rgb(211, 211, 211);
+        }
+
+        p {
+            color: #333333;
+        }
+
+        h1 {
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
-    <h1 id="top">Welcome to my page, Zakayo Lesangida</h1>
+    <h1 id="top" style="color: #c62828;">Welcome to my page, Zakayo Lesangida</h1>
     <p>My name is Zakayo Lesangida, and I am a student at Laurea University of Applied Sciences.</p>
-    <img src="1000029338.jpg" alt="Photo of Zakayo Lesangida" width="200" height="200">
+
+    <div class="content-box">
+        <h3>About this page</h3>
+        <p>This page was created to practice HTML and CSS fundamentals.</p>
+    </div>
+
+    <h2>Advanced CSS examples</h2>
+
+    <h3>CSS transitions</h3>
+    <button type="button" class="transition-button">Hover me</button>
+
+    <h3>CSS animations</h3>
+    <div class="animation-box" aria-hidden="true"></div>
+
+    <h3>CSS pseudo-classes</h3>
+    <ul class="pseudo-list">
+        <li>Attend classes</li>
+        <li>study for 2 hours</li>
+        <li>completed homework</li>
+        <li>go for a walk</li>
+    </ul>
+
+    <h3>CSS filters</h3>
+    <img src="1000029338.jpg" alt="Photo of Zakayo Lesangida" width="200" height="200" class="filter-image">
+
+    <h3>CSS pseudo-elements</h3>
+    <blockquote class="quote">This is a sample quote.</blockquote>
 
     <h2>My hobbies</h2>
     <ul>
@@ -33,14 +73,18 @@
         <tbody>
             <tr>
                 <td>HTML Basics</td>
-                <td>In progress</td>
+                <td>completed</td>
             </tr>
             <tr>
                 <td>CSS Fundamentals</td>
-                <td>In progress</td>
+                <td>completed</td>
             </tr>
             <tr>
                 <td>Web Development</td>
+                <td>Planned</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
                 <td>Planned</td>
             </tr>
         </tbody>
