@@ -20,89 +20,141 @@
     </style>
 </head>
 <body>
-    <h1 id="top" style="color: #c62828;">Welcome to my page, Zakayo Lesangida</h1>
-    <p>My name is Zakayo Lesangida, and I am a student at Laurea University of Applied Sciences.</p>
+    <header id="top">
+        <h1 style="color: #c62828;">Welcome to my page, Zakayo Lesangida</h1>
+        <nav aria-label="Main navigation">
+            <ul class="site-nav">
+                <li><a href="#about">About</a></li>
+                <li><a href="#advanced-css">Advanced CSS</a></li>
+                <li><a href="#layout-examples">Layout examples</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <div class="content-box">
-        <h3>About this page</h3>
-        <p>This page was created to practice HTML and CSS fundamentals.</p>
-    </div>
+    <main>
+        <section id="about">
+            <h2>About me</h2>
+            <p>My name is Zakayo Lesangida, and I am a student at Laurea University of Applied Sciences.</p>
 
-    <h2>Advanced CSS examples</h2>
+            <div class="content-box">
+                <h3>About this page</h3>
+                <p>This page was created to practice HTML and CSS fundamentals.</p>
+            </div>
+        </section>
 
-    <h3>CSS transitions</h3>
-    <button type="button" class="transition-button">Hover me</button>
+        <section id="advanced-css">
+            <h2>Advanced CSS examples</h2>
 
-    <h3>CSS animations</h3>
-    <div class="animation-box" aria-hidden="true"></div>
+            <h3>CSS transitions</h3>
+            <button type="button" class="transition-button">Hover me</button>
 
-    <h3>CSS pseudo-classes</h3>
-    <ul class="pseudo-list">
-        <li>Attend classes</li>
-        <li>study for 2 hours</li>
-        <li>completed homework</li>
-        <li>go for a walk</li>
-    </ul>
+            <h3>CSS animations</h3>
+            <div class="animation-box" aria-hidden="true"></div>
 
-    <h3>CSS filters</h3>
-    <img src="1000029338.jpg" alt="Photo of Zakayo Lesangida" width="200" height="200" class="filter-image">
+            <h3>CSS pseudo-classes</h3>
+            <ul class="pseudo-list">
+                <li>Attend classes</li>
+                <li>Study for 2 hours</li>
+                <li>Complete homework</li>
+                <li>Go for a walk</li>
+            </ul>
 
-    <h3>CSS pseudo-elements</h3>
-    <blockquote class="quote">This is a sample quote.</blockquote>
+            <h3>CSS filters</h3>
+            <img src="1000029338.jpg" alt="Photo of Zakayo Lesangida" width="200" height="200" class="filter-image">
 
-    <h2>My hobbies</h2>
-    <ul>
-        <li>Playing football</li>
-        <li>Watching movies</li>
-        <li>Reading books</li>
-        <li>Cooking</li>
-        <li>Traveling</li>
-    </ul>
+            <h3>CSS pseudo-elements</h3>
+            <blockquote class="quote">This is a sample quote.</blockquote>
+        </section>
 
-    <h2>My favorite website</h2>
-    <p><a href="https://www.laurea.fi/">Visit Laurea University of Applied Sciences</a></p>
+        <section id="layout-examples">
+            <h2>Page layout examples</h2>
 
-    <h2>My courses</h2>
-    <table>
-        <thead>
-            <tr>
-                <th scope="col">Course</th>
-                <th scope="col">Status</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>HTML Basics</td>
-                <td>completed</td>
-            </tr>
-            <tr>
-                <td>CSS Fundamentals</td>
-                <td>completed</td>
-            </tr>
-            <tr>
-                <td>Web Development</td>
-                <td>Planned</td>
-            </tr>
-            <tr>
-                <td>JavaScript</td>
-                <td>Planned</td>
-            </tr>
-        </tbody>
-    </table>
+            <h3>Grid layout</h3>
+            <div class="grid-container">
+                <div class="grid-item">1</div>
+                <div class="grid-item">2</div>
+                <div class="grid-item">3</div>
+                <div class="grid-item">4</div>
+                <div class="grid-item">5</div>
+                <div class="grid-item">6</div>
+            </div>
 
-    <h2>Contact me</h2>
-    <form>
-        <p>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" value="Zakayo Lesangida">
-        </p>
-        <p>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" value="jezielzak@gmail.com">
-        </p>
-        <button type="submit">Submit</button>
-    </form>
+            <h3>Flexbox layout</h3>
+            <div class="flex-container">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+            </div>
 
-    <p><a href="#top">Back to top</a></p>
+            <h3>Responsive layout</h3>
+            <div class="responsive-box">Resize the window to see the effect</div>
+        </section>
+
+        <section id="hobbies">
+            <h2>My hobbies</h2>
+            <ul>
+                <li>Playing football</li>
+                <li>Watching movies</li>
+                <li>Reading books</li>
+                <li>Cooking</li>
+                <li>Traveling</li>
+            </ul>
+
+            <h3>My favorite website</h3>
+            <p><a href="https://www.laurea.fi/">Visit Laurea University of Applied Sciences</a></p>
+        </section>
+
+        <section id="courses">
+            <h2>My courses</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Course</th>
+                        <th scope="col">Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML Basics</td>
+                        <td>completed</td>
+                    </tr>
+                    <tr>
+                        <td>CSS Fundamentals</td>
+                        <td>completed</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>Planned</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Planned</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact me</h2>
+            <form>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" value="Zakayo Lesangida">
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" value="jezielzak@gmail.com">
+                </p>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="#top">Back to top</a></p>
+        <p>Copyright 2026</p>
+    </footer>
 </body>
 </html>
